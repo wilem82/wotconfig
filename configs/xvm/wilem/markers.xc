@@ -30,6 +30,11 @@
       "blowupMessage": "-{{dmg}}!"
     },
 
+    "damageTextLethal": {
+      "$ref": { "path": "def.damageText" },
+      "damageMessage": "-{{dmg}} <font face='xvm'>&#x76;</font>"
+    },
+
     "healthBar": {
       "enabled": true,
       "x": -41,
@@ -48,18 +53,10 @@
         "alpha": 35
       },
       "damage": {
-        "alpha": 80,
+        "alpha": 100,
         "color": "{{c:dmg}}",
         "fade": 1
       }
-    },
-
-    "textFormat": {
-      "font": "$UniversCondC",
-      "size": 12,
-      "color": "0xFFFFFF",
-      "bold": false,
-      "italic": false
     },
 
     "normal": {
@@ -72,64 +69,61 @@
       "levelIcon": { "enabled": false }
     },
 
-    "normal_textfield": {
+    "textField": {
       "enabled": true,
       "name": "Tank name", "x": 0, "y": 8, "alpha": 100, "align": "center",
-      "textFormat": ${"def.textFormat"},
+      "textFormat": {
+        "font": "$UniversCondC",
+        "size": 12,
+        "color": "0xFFFFFF",
+        "bold": false,
+        "italic": false
+      },
       "shadow": {
         "enabled": true,
         "distance": 0, "angle": 45, "alpha": 80, "blur": 3, "strength": 3,
         "color": "0x003300"
-      },
-      "format": "{{vehicle}}"
-    },
-
-    "extended_textfield": {
-      "$ref": { "path": "def.normal_textfield" },
-      "format": "{{hp}}"
+      }
     },
 
     "dead": {
+      /* Marker for dead vehicle. */
       "vehicleIcon": { "enabled": false },
       "healthBar": { "enabled": false },
-      "damageText": ${"def.damageText"},
-      "damageTextPlayer": ${"def.damageText"},
-      "damageTextSquadman": ${"def.damageText"},
       "contourIcon": { "enabled": false },
       "levelIcon": { "enabled": false },
-      "textFields": []
+      "textFields": [],
+
+      /* Floating damage upon receiving lethal damage. */
+      "damageText": ${"def.damageTextLethal"},
+      "damageTextPlayer": ${"def.damageTextLethal"},
+      "damageTextSquadman": ${"def.damageTextLethal"}
     }
   },
 
   "markers": {
     "enabled": true,
-    "turretMarkers": {
-      "highVulnerability": "",
-      "lowVulnerability": ""
-    },
 
     "ally": {
       "alive": {
         "normal": {
           "$ref": { "path": "def.normal" },
           "textFields": [{
-              "$ref": { "path": "def.normal_textfield" },
-              "shadow": {
-                "color": "0x003300"
-              }
+              "$ref": { "path": "def.textField" },
+              "format": "{{vehicle}}",
+              "shadow": { "color": "0x003300" }
           }]
         },
         "extended": {
           "$ref": { "path": "def.normal" },
           "textFields": [{
-              "$ref": { "path": "def.extended_textfield" },
-              "shadow": {
-                "color": "0x003300"
-              }
+              "$ref": { "path": "def.textField" },
+              "format": "{{hp}}",
+              "shadow": { "color": "0x003300" }
           }]
         }
       },
-      "dead": { // on fatal damage
+      "dead": {
         "normal": ${"def.dead"},
         "extended": ${"def.dead"}
       }
@@ -140,19 +134,17 @@
         "normal": {
           "$ref": { "path": "def.normal" },
           "textFields": [{
-              "$ref": { "path": "def.normal_textfield" },
-              "shadow": {
-                "color": "0x330000"
-              }
+              "$ref": { "path": "def.textField" },
+              "format": "{{vehicle}}",
+              "shadow": { "color": "0x330000" }
           }]
         },
         "extended": {
           "$ref": { "path": "def.normal" },
           "textFields": [{
-              "$ref": { "path": "def.extended_textfield" },
-              "shadow": {
-                "color": "0x660000"
-              }
+              "$ref": { "path": "def.textField" },
+              "format": "{{hp}}",
+              "shadow": { "color": "0x660000" }
           }]
         }
       },
