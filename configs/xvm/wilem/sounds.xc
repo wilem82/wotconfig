@@ -1,0 +1,5 @@
+﻿{
+  "sounds": {
+    "enabled": false
+  }
+}
