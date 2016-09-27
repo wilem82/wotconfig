@@ -120,10 +120,10 @@
     ],
     "damageRating": [
       { "value": 20,    "color": ${"def.colorRating.very_bad" } },
-      { "value": 60,    "color": ${"def.colorRating.bad"      } },
-      { "value": 90,    "color": ${"def.colorRating.normal"   } },
-      { "value": 99,    "color": ${"def.colorRating.good"     } },
-      { "value": 99.9,  "color": ${"def.colorRating.very_good"} },
+      { "value": 45,    "color": ${"def.colorRating.bad"      } },
+      { "value": 65,    "color": ${"def.colorRating.normal"   } },
+      { "value": 85,    "color": ${"def.colorRating.good"     } },
+      { "value": 95,  "color": ${"def.colorRating.very_good"} },
       { "value": 101,   "color": ${"def.colorRating.unique"   } }
     ],
     "x": [

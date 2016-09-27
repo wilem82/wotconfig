@@ -46,7 +46,7 @@
           "$ref": { "path": "def.defaultItem" },
           "flags": [ "alive", "spotted", "ally", "enemy", "squadman", "teamKiller" ],
           "textFormat": { "font": "$UniversCondC", "size": 6 },
-          "format": "<font color='{{c:r}}'>{{vehicle}}</font>",
+          "format": "<font color='{{c:t-winrate}}'>{{vehicle}}</font>",
           "layer": "bottom",
           "x": ${"def.vehicle_name_x"},
           "y": ${"def.vehicle_name_y"}

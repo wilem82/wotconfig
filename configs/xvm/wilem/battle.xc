@@ -8,6 +8,7 @@
     "sixthSenseIcon": "",
     "sixthSenseDuration": 2000,
     "camera": {
+      "enabled": true,
       "arcade": {
         "distRange": ${"def.distRange"},
         "shotRecoilEffect": true
