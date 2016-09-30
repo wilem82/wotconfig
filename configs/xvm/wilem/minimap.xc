@@ -36,9 +36,9 @@
     "mapSize": {
 	    "enabled": false
     },
-    "useStandardCircles": false,
-    "useStandardLabels": false,
-    "useStandardLines": false,
+    "circlesEnabled": false,
+    "labelsEnabled": true,
+    "linesEnabled": true,
     "labels": {
       "enabled": true,
       "formats": [
