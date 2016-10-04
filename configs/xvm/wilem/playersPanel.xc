@@ -47,8 +47,8 @@
       "nickMinWidth": 46,
       "nickMaxWidth": 158,
       "vehicleWidth": 100,
-      "vehicleFormatLeft": "<font color='{{c:t-winrate}}' alpha='{{alive?#FF|#80}}'>{{vehicle}} <font color='{{c:winrate}}'>•</font></font>",
-      "vehicleFormatRight": "<font color='{{c:winrate}}'>•</font> <font color='{{c:t-winrate}}' alpha='{{alive?#FF|#80}}'>{{vehicle}}</font>",
+      "vehicleFormatLeft": "<font color='{{c:winrate}}' alpha='{{alive?#FF|#80}}'>{{vehicle}} <font color='{{c:t-winrate}}'>•</font></font>",
+      "vehicleFormatRight": "<font color='{{c:t-winrate}}'>•</font> <font color='{{c:winrate}}' alpha='{{alive?#FF|#80}}'>{{vehicle}}</font>",
       "extraFieldsLeft": [
         ${"def.vicon"}
       ],
