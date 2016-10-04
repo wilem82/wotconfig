@@ -36,7 +36,7 @@
     "mapSize": {
 	    "enabled": false
     },
-    "circlesEnabled": false,
+    "circlesEnabled": true,
     "labelsEnabled": true,
     "linesEnabled": true,
     "labels": {
@@ -115,6 +115,12 @@
     "labelsData": {
     },
     "circles": {
+      "view": [
+        { "enabled":  true, "distance": 50,          "scale": 1, "thickness":  0.1, "alpha": 35, "color": "0x00FF00" },
+        { "enabled":  true, "distance": 445,         "scale": 1, "thickness":  0.1, "alpha": 85, "color": "0xFACC2E" },
+        { "enabled":  true, "distance": "blindarea", "scale": 1, "thickness":  0.1, "alpha": 85, "color": "0x80FF00" },
+        { "enabled":  true, "distance": 564,         "scale": 1, "thickness":  0.1, "alpha": 85, "color": "0xFFFFFF" }
+      ]
     },
     "lines": {
     }

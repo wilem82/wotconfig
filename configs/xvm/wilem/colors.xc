@@ -9,12 +9,17 @@
     "un_al": "0xCCCCCC",
     "un_en": "0xCCCCCC",
     "colorRating": {
-      "very_bad":     "0x585858",
-      "bad":          "0xd0d0d0",
-      "normal":       "0xBFAD1C",
-      "good":         "0x1BC062",
-      "very_good":    "0xFACC2E",
-      "unique":       "0xF4FA58"
+      "very_bad":     "0x686868",
+      "bad":          "0xa0a0a0",
+
+      "normal":       "0x44B23A",
+      "good_pre":     "0x28E661",
+
+      "good":         "0xFFBF00",
+      "good_post":    "0xF7D358",
+
+      "very_good":    "0xFA5858",
+      "unique":       "0xFF4000"
     }
   },
   "colors": {
@@ -130,7 +135,9 @@
       { "value": 16.5, "color": ${"def.colorRating.very_bad" } },
       { "value": 33.5, "color": ${"def.colorRating.bad"      } },
       { "value": 52.5, "color": ${"def.colorRating.normal"   } },
+      { "value": 65.5, "color": ${"def.colorRating.good_pre"     } },
       { "value": 75.5, "color": ${"def.colorRating.good"     } },
+      { "value": 85.5, "color": ${"def.colorRating.good_post"     } },
       { "value": 92.5, "color": ${"def.colorRating.very_good"} },
       { "value": 999,  "color": ${"def.colorRating.unique"   } }
     ]

@@ -81,7 +81,7 @@
       },
       "shadow": {
         "enabled": true,
-        "distance": 0, "angle": 45, "alpha": 80, "blur": 3, "strength": 3,
+        "distance": 0, "angle": 45, "alpha": 80, "blur": 3, "strength": 5,
         "color": "0x003300"
       }
     },
@@ -110,7 +110,7 @@
           "$ref": { "path": "def.normal" },
           "textFields": [{
               "$ref": { "path": "def.textField" },
-              "format": "{{vehicle}}",
+              "format": "{{vehicle}} <font color='{{c:winrate}}'>•</font>",
               "shadow": { "color": "0x003300" }
           }]
         },
@@ -135,7 +135,7 @@
           "$ref": { "path": "def.normal" },
           "textFields": [{
               "$ref": { "path": "def.textField" },
-              "format": "{{vehicle}}",
+              "format": "{{vehicle}} <font color='{{c:winrate}}'>•</font>",
               "shadow": { "color": "0x330000" }
           }]
         },

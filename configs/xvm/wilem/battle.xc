@@ -1,7 +1,11 @@
 ﻿// vim: ts=2 sw=2 expandtab
 {
   "def": {
-    "distRange": [1, 125]
+    "item": {
+      "distRange": [10, 200],
+      "scrollSensitivity": 20,
+      "shotRecoilEffect": true
+    }
   },
   "battle": {
     "showPostmortemTips": false,
@@ -10,8 +14,7 @@
     "camera": {
       "enabled": true,
       "arcade": {
-        "distRange": ${"def.distRange"},
-        "shotRecoilEffect": true
+        "$ref": { "path": "def.item" }
       },
       "sniper": {
         "zooms": [1, 2, 4, 8, 16, 24, 32, 48, 64],
@@ -21,8 +24,7 @@
         "shotRecoilEffect": false
       },
       "postmortem": {
-        "distRange": ${"def.distRange"},
-        "shotRecoilEffect": true
+        "$ref": { "path": "def.item" }
       },
       "strategic": {
         "distRange": [40, 125],
