@@ -119,7 +119,9 @@
       { "value": 46.5, "color": ${"def.colorRating.very_bad" } },
       { "value": 48.5, "color": ${"def.colorRating.bad"      } },
       { "value": 52.5, "color": ${"def.colorRating.normal"   } },
+      { "value": 54.5, "color": ${"def.colorRating.good_pre"     } },
       { "value": 57.5, "color": ${"def.colorRating.good"     } },
+      { "value": 59.5, "color": ${"def.colorRating.good_post"     } },
       { "value": 64.5, "color": ${"def.colorRating.very_good"} },
       { "value": 101,  "color": ${"def.colorRating.unique"   } }
     ],

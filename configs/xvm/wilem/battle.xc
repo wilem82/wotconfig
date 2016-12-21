@@ -3,7 +3,7 @@
   "def": {
     "item": {
       "distRange": [10, 200],
-      "scrollSensitivity": 20,
+      "scrollSensitivity": 10,
       "shotRecoilEffect": true
     }
   },

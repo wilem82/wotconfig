@@ -32,7 +32,7 @@
 
     "damageTextLethal": {
       "$ref": { "path": "def.damageText" },
-      "damageMessage": "-{{dmg}} <font face='xvm'>&#x76;</font>"
+      "damageMessage": "-{{dmg}} <font face='xvm'>&#x76;</font> {{vehicle}}"
     },
 
     "healthBar": {

@@ -123,6 +123,30 @@
       ]
     },
     "lines": {
+      "vehicle": [
+        {
+          "enabled": true,
+          "inmeters": false,
+          "color": "0xED2020",
+          "from": 1,
+          "to": 9999,
+          "thickness": 1.1,
+          "alpha": 90
+        }
+      ],
+      "camera": [
+        {
+          "enabled": true,
+          "inmeters": false,
+          "color": "0xCCCCCC",
+          "from": 1,
+          "to": 9999,
+          "thickness": 0.1,
+          "alpha": 80
+        }
+      ],
+      "traverseAngle": [
+      ]
     }
   }
 }

@@ -5,6 +5,7 @@
   "battleLabels": ${"battleLabels.xc":"labels"},
   "battleResults": ${"battleResults.xc":"battleResults"},
   "colors": ${"colors.xc":"colors"},
+  "damageLog": ${"damageLog.xc":"damageLog"},  
   "hangar": ${"hangar.xc":"hangar"},
   "hotkeys": ${"hotkeys.xc":"hotkeys"},
   "login": ${"login.xc":"login"},
