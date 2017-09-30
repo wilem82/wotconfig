@@ -8,6 +8,7 @@
     }
   },
   "battle": {
+    "mirroredVehicleIcons": true,
     "showPostmortemTips": false,
     "sixthSenseIcon": "",
     "sixthSenseDuration": 2000,

@@ -13,5 +13,7 @@
   "minimap": ${"minimap.xc":"minimap"},
   "playersPanel": ${"playersPanel.xc":"playersPanel"},
   "sounds": ${"sounds.xc":"sounds"},
-  "squad": ${"squad.xc":"squad"}
+  "squad": ${"squad.xc":"squad"},
+  "captureBar": { "enabled": false },
+  "statisticForm": ${"statisticForm.xc":"statisticForm"}
 }

@@ -110,7 +110,7 @@
           "$ref": { "path": "def.normal" },
           "textFields": [{
               "$ref": { "path": "def.textField" },
-              "format": "{{vehicle}} <font color='{{c:winrate}}'>•</font>",
+              "format": "{{vehicle}} <font color='{{c:wtr}}'>•</font>",
               "shadow": { "color": "0x003300" }
           }]
         },
@@ -135,7 +135,7 @@
           "$ref": { "path": "def.normal" },
           "textFields": [{
               "$ref": { "path": "def.textField" },
-              "format": "{{vehicle}} <font color='{{c:winrate}}'>•</font>",
+              "format": "{{vehicle}} <font color='{{c:wtr}}'>•</font>",
               "shadow": { "color": "0x330000" }
           }]
         },

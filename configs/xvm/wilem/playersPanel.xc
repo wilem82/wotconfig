@@ -41,14 +41,16 @@
     "startMode": "medium2",
     "altMode": null,
     "medium2": {
-      "expandAreaWidth": 230,
+      "expandAreaWidth": 200,
       "removeSquadIcon": false,
-      "vehicleLevelAlpha": 0,
+      "vehicleLevelXOffsetLeft": -6,
+      "vehicleLevelXOffsetRight": 0,
+      "vehicleLevelAlpha": 100,
       "nickMinWidth": 46,
       "nickMaxWidth": 158,
       "vehicleWidth": 100,
-      "vehicleFormatLeft": "<font color='{{c:winrate}}' alpha='{{alive?#FF|#80}}'>{{vehicle}} <font color='{{c:t-winrate}}'>•</font></font>",
-      "vehicleFormatRight": "<font color='{{c:t-winrate}}'>•</font> <font color='{{c:winrate}}' alpha='{{alive?#FF|#80}}'>{{vehicle}}</font>",
+      "vehicleFormatLeft": "<font alpha='{{alive?#FF|#80}}'>{{vehicle}}</font> <font color='{{c:wtr}}'>•</font>",
+      "vehicleFormatRight": "<font color='{{c:wtr}}'>•</font> <font alpha='{{alive?#FF|#80}}'>{{vehicle}}</font>",
       "extraFieldsLeft": [
         ${"def.vicon"}
       ],

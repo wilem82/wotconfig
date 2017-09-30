@@ -22,19 +22,20 @@
   },
   "minimap": {
     "enabled": true,
-    "mapBackgroundImageAlpha": 90,
+    "mapBackgroundImageAlpha": 100,
     "selfIconAlpha": 75,
     "selfIconScale": 1,
     "iconScale": 0.8,
     "directionTriangleAlpha": 0,
     "directionLineAlpha": 100,
     "showDirectionLineAfterDeath": true,
+    "showCellClickAnimation": false,
     "zoom": {
       "index": 5,
       "centered": false
     },
     "mapSize": {
-	    "enabled": false
+      "enabled": false
     },
     "circlesEnabled": true,
     "labelsEnabled": true,
@@ -45,16 +46,17 @@
         { // active vehicle name
           "$ref": { "path": "def.defaultItem" },
           "flags": [ "alive", "spotted", "ally", "enemy", "squadman", "teamKiller" ],
-          "textFormat": { "font": "$UniversCondC", "size": 6 },
-          "format": "<font color='{{c:winrate}}'>{{vehicle}}</font>",
-          "layer": "bottom",
+          "textFormat": { "font": "$UniversCondC", "size": 7 },
+          // 
+          "format": "<font color='#CCCCCC'>{{vehicle}}<font color='{{c:wtr}}' size='5'>•</font></font>",
+          "layer": "normal",
           "x": ${"def.vehicle_name_x"},
           "y": ${"def.vehicle_name_y"}
         },
         { // squad player name
           "$ref": { "path": "def.defaultItem" },
           "flags": [ "squadman", "spotted", "alive" ],
-          "textFormat": { "font": "$UniversCondC", "size": 6 },
+          "textFormat": { "font": "$UniversCondC", "size": 7 },
           "format": "<font color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'>{{name%.7s~..}}</font>",
           "x": 2,
           "y": -9
@@ -64,7 +66,7 @@
           "flags": [ "enemy", "teamKiller", "lost", "alive" ],
           "textFormat": { "font": "xvm", "size": 9, "align": "center", "valign": "center" },
           "format": "<font color='#F2F2F2'>{{.minimap.labelsData.vtype.{{vtype-key}}}}</font>",
-          "layer": "bottom",
+          "layer": "normal",
           "align": "center",
           "valign": "center",
           "alpha": 85
@@ -72,7 +74,7 @@
         { // lost vehicle name
           "$ref": { "path": "def.defaultItem" },
           "flags": [ "enemy", "teamKiller", "lost", "alive" ],
-          "format": "<font face='$UniversCondC' size='6' color='#f2f2f2'>{{vehicle}}</font>",
+          "format": "<font face='$UniversCondC' size='7' color='#f2f2f2'>{{vehicle}}<font size='5'>•</font></font>",
           "layer": "bottom",
           "alpha": 85,
           "x": ${"def.vehicle_name_x"},
@@ -119,7 +121,7 @@
         { "enabled":  true, "distance": 50,          "scale": 1, "thickness":  0.1, "alpha": 35, "color": "0x00FF00" },
         { "enabled":  true, "distance": 445,         "scale": 1, "thickness":  0.1, "alpha": 85, "color": "0xFACC2E" },
         { "enabled":  true, "distance": "blindarea", "scale": 1, "thickness":  0.1, "alpha": 85, "color": "0x80FF00" },
-        { "enabled":  true, "distance": 564,         "scale": 1, "thickness":  0.1, "alpha": 85, "color": "0xFFFFFF" }
+        { "enabled":  true, "distance": 564,         "scale": 1, "thickness":  0.1, "alpha": 85, "color": "0xF7D358" }
       ]
     },
     "lines": {
@@ -127,10 +129,10 @@
         {
           "enabled": true,
           "inmeters": false,
-          "color": "0xED2020",
-          "from": 1,
+          "color": "0xCCCCCC",
+          "from": 5,
           "to": 9999,
-          "thickness": 1.1,
+          "thickness": 0.1,
           "alpha": 90
         }
       ],
@@ -138,10 +140,10 @@
         {
           "enabled": true,
           "inmeters": false,
-          "color": "0xCCCCCC",
-          "from": 1,
+          "color": "0xED2020",
+          "from": 5,
           "to": 9999,
-          "thickness": 0.1,
+          "thickness": 1.1,
           "alpha": 80
         }
       ],

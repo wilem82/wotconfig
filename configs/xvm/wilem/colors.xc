@@ -9,17 +9,11 @@
     "un_al": "0xCCCCCC",
     "un_en": "0xCCCCCC",
     "colorRating": {
-      "very_bad":     "0x686868",
-      "bad":          "0xa0a0a0",
-
-      "normal":       "0x44B23A",
-      "good_pre":     "0x28E661",
-
-      "good":         "0xFFBF00",
-      "good_post":    "0xF7D358",
-
-      "very_good":    "0xFA5858",
-      "unique":       "0xFF4000"
+      "very_bad":   "0x686868",
+      "bad":        "0xa0a0a0",
+      "normal":     "0x44B23A",
+      "good":       "0xffa600",
+      "very_good":  "0xFA5858" // FF4000
     }
   },
   "colors": {
@@ -116,32 +110,35 @@
       "unknown_enemytk_blowup":     ${"def.un_en"}
     },
     "winrate": [
-      { "value": 46.5, "color": ${"def.colorRating.very_bad" } },
-      { "value": 48.5, "color": ${"def.colorRating.bad"      } },
-      { "value": 52.5, "color": ${"def.colorRating.normal"   } },
-      { "value": 54.5, "color": ${"def.colorRating.good_pre"     } },
-      { "value": 57.5, "color": ${"def.colorRating.good"     } },
-      { "value": 59.5, "color": ${"def.colorRating.good_post"     } },
-      { "value": 64.5, "color": ${"def.colorRating.very_good"} },
-      { "value": 101,  "color": ${"def.colorRating.unique"   } }
+      { "value": 46,   "color": ${"def.colorRating.very_bad" } },
+      { "value": 50,   "color": ${"def.colorRating.bad"      } },
+      { "value": 55,   "color": ${"def.colorRating.normal"   } },
+      { "value": 60,   "color": ${"def.colorRating.good"     } },
+      { "value": 101,  "color": ${"def.colorRating.very_good"} }
     ],
     "damageRating": [
-      { "value": 20,    "color": ${"def.colorRating.very_bad" } },
-      { "value": 45,    "color": ${"def.colorRating.bad"      } },
-      { "value": 65,    "color": ${"def.colorRating.normal"   } },
-      { "value": 85,    "color": ${"def.colorRating.good"     } },
-      { "value": 95,  "color": ${"def.colorRating.very_good"} },
-      { "value": 101,   "color": ${"def.colorRating.unique"   } }
+      { "value": 45,   "color": ${"def.colorRating.very_bad" } },
+      { "value": 65,   "color": ${"def.colorRating.bad"      } },
+      { "value": 75,   "color": ${"def.colorRating.normal"   } },
+      { "value": 85,   "color": ${"def.colorRating.good"     } },
+      { "value": 101,  "color": ${"def.colorRating.very_good"} }
     ],
     "x": [
       { "value": 16.5, "color": ${"def.colorRating.very_bad" } },
       { "value": 33.5, "color": ${"def.colorRating.bad"      } },
       { "value": 52.5, "color": ${"def.colorRating.normal"   } },
-      { "value": 65.5, "color": ${"def.colorRating.good_pre"     } },
+      { "value": 65.5, "color": ${"def.colorRating.good"     } },
       { "value": 75.5, "color": ${"def.colorRating.good"     } },
-      { "value": 85.5, "color": ${"def.colorRating.good_post"     } },
-      { "value": 92.5, "color": ${"def.colorRating.very_good"} },
-      { "value": 999,  "color": ${"def.colorRating.unique"   } }
+      { "value": 80.5, "color": ${"def.colorRating.very_good"} },
+      { "value": 90.5, "color": ${"def.colorRating.very_good"} }
+    ],
+    "wtr": [
+      { "value": 2631,  "color": ${"def.colorRating.very_bad" } }, //    0 - 2631 - very bad  (20% of players)
+      { "value": 4464,  "color": ${"def.colorRating.bad"      } }, // 2632 - 4464 - bad       (better than 20% of players)
+      { "value": 6249,  "color": ${"def.colorRating.normal"   } }, // 4465 - 6249 - normal    (better than 60% of players)
+      { "value": 8141,  "color": ${"def.colorRating.good"     } }, // 6250 - 8141 - good      (better than 90% of players)
+      { "value": 9460,  "color": ${"def.colorRating.very_good"} } // 8142 - 9460 - very good (better than 99% of players)
+//      { "value": 99999, "color": ${"def.colorRating.unique"   } }  // 9461 - *    - unique    (better than 99.9% of players)
     ]
   }
 }

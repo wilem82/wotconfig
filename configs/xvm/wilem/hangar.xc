@@ -29,7 +29,7 @@
         "horizontal": 10,
         "vertical": 2
       },
-      "backgroundAlpha": 60,
+      "backgroundAlpha": 90,
       "scrollingSpeed": 1,
       "hideBuyTank": true,
       "hideBuySlot": true,
@@ -59,6 +59,7 @@
           }
         ]
       }
-    }
+    },
+    "widgets": []
   }
 }
