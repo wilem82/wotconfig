@@ -37,7 +37,7 @@
       "showUsedSlots": true,
       "nations_order": [],
       "types_order":   ["lightTank", "mediumTank", "heavyTank", "AT-SPG", "SPG"],
-      "sorting_criteria": ["type", "level", "nation"],
+      "sorting_criteria": ["-level", "-type", "-nation"],
       "suppressCarouselTooltips": false,
       "normal": {
         "extraFields": [
@@ -53,6 +53,15 @@
             "y": 17,
             //"alpha": 80,
             "format": "<font size='12' color='{{v.c_winrate}}'>{{v.winrate%3.02f}}%</font>",
+            "align": "center",
+            //"valign": "bottom",
+            "shadow": { "distance": 0, "angle": 45, "color": "0x000000", "alpha": 80, "blur": 2, "strength": 4 }
+          },
+          {
+            "x": 80,
+            "y": 34,
+            //"alpha": 80,
+            "format": "<font color='#cccccc' size='12'>{{v.wins}} - {{py:sub({{v.battles}}, {{v.wins}})}} ({{v.battles}})</font>",
             "align": "center",
             //"valign": "bottom",
             "shadow": { "distance": 0, "angle": 45, "color": "0x000000", "alpha": 80, "blur": 2, "strength": 4 }

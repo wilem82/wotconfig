@@ -27,7 +27,7 @@
       "speed": 4,
       "maxRange": 40,
       "damageMessage": "-{{dmg}}",
-      "blowupMessage": "-{{dmg}}!"
+      "blowupMessage": "-{{dmg}}! <font face='xvm'>&#x76;</font> {{vehicle}}"
     },
 
     "damageTextLethal": {
@@ -40,7 +40,7 @@
       "x": -41,
       "y": -6,
       "alpha": 100,
-      "width": 80,
+      "width": 100,
       "height": 14,
       "color": null,
       "lcolor": null,
@@ -110,7 +110,7 @@
           "$ref": { "path": "def.normal" },
           "textFields": [{
               "$ref": { "path": "def.textField" },
-              "format": "{{vehicle}} <font color='{{c:wtr}}'>•</font>",
+              "format": "{{vehicle}} <font color='{{c:wtr}}'>•</font> <font color='{{c:t-winrate}}'>{{t-battles>30?{{t-winrate%2d|--}}%}}</font>",
               "shadow": { "color": "0x003300" }
           }]
         },
@@ -135,7 +135,7 @@
           "$ref": { "path": "def.normal" },
           "textFields": [{
               "$ref": { "path": "def.textField" },
-              "format": "{{vehicle}} <font color='{{c:wtr}}'>•</font>",
+              "format": "{{vehicle}} <font color='{{c:wtr}}'>•</font> <font color='{{c:t-winrate}}'>{{t-battles>30?{{t-winrate%2d|--}}%}}</font>",
               "shadow": { "color": "0x330000" }
           }]
         },
