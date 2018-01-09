@@ -61,7 +61,7 @@
             "x": 80,
             "y": 34,
             //"alpha": 80,
-            "format": "<font color='#cccccc' size='12'>{{v.wins}} - {{py:sub({{v.battles}}, {{v.wins}})}} ({{v.battles}})</font>",
+            "format": "<font color='#cccccc' size='12'>{{v.wins}} - {{py:sub({{v.battles}}, {{v.wins}})}} ({{v.battles}}, {{py:sub({{v.wins}}, {{py:sub({{v.battles}}, {{v.wins}})}})>0?+}}{{py:sub({{v.wins}}, {{py:sub({{v.battles}}, {{v.wins}})}})}})</font>",
             "align": "center",
             //"valign": "bottom",
             "shadow": { "distance": 0, "angle": 45, "color": "0x000000", "alpha": 80, "blur": 2, "strength": 4 }

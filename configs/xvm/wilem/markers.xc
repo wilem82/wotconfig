@@ -37,7 +37,7 @@
 
     "healthBar": {
       "enabled": true,
-      "x": -41,
+      "x": -51,
       "y": -6,
       "alpha": 100,
       "width": 100,
@@ -110,8 +110,8 @@
           "$ref": { "path": "def.normal" },
           "textFields": [{
               "$ref": { "path": "def.textField" },
-              "format": "{{vehicle}} <font color='{{c:wtr}}'>•</font> <font color='{{c:t-winrate}}'>{{t-battles>30?{{t-winrate%2d|--}}%}}</font>",
-              "shadow": { "color": "0x003300" }
+              "format": "{{vehicle}} <font color='{{c:wtr}}'>•</font> <font face='Consolas' size='11' color='{{c:t-winrate}}'>{{t-battles>30?{{t-winrate%2d|--}}%}}</font>",
+              "shadow": { "color": "0x000000" }
           }]
         },
         "extended": {
@@ -119,7 +119,7 @@
           "textFields": [{
               "$ref": { "path": "def.textField" },
               "format": "{{hp}}",
-              "shadow": { "color": "0x003300" }
+              "shadow": { "color": "0x000000" }
           }]
         }
       },
@@ -135,8 +135,8 @@
           "$ref": { "path": "def.normal" },
           "textFields": [{
               "$ref": { "path": "def.textField" },
-              "format": "{{vehicle}} <font color='{{c:wtr}}'>•</font> <font color='{{c:t-winrate}}'>{{t-battles>30?{{t-winrate%2d|--}}%}}</font>",
-              "shadow": { "color": "0x330000" }
+              "format": "{{vehicle}} <font color='{{c:wtr}}'>•</font> <font face='Consolas' size='11' color='{{c:t-winrate}}'>{{t-battles>30?{{t-winrate%2d|--}}%}}</font>",
+              "shadow": { "color": "0x000000" }
           }]
         },
         "extended": {
@@ -144,7 +144,7 @@
           "textFields": [{
               "$ref": { "path": "def.textField" },
               "format": "{{hp}}",
-              "shadow": { "color": "0x660000" }
+              "shadow": { "color": "0x000000" }
           }]
         }
       },

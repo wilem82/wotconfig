@@ -49,8 +49,8 @@
       "nickMinWidth": 46,
       "nickMaxWidth": 158,
       "vehicleWidth": 100,
-      "vehicleFormatLeft": "<font alpha='{{alive?#FF|#80}}'>{{vehicle}}</font> <font color='{{c:wtr}}'>•</font>",
-      "vehicleFormatRight": "<font color='{{c:wtr}}'>•</font> <font alpha='{{alive?#FF|#80}}'>{{vehicle}}</font>",
+      "vehicleFormatLeft": "<font alpha='{{alive?#FF|#80}}'>{{vehicle}}</font> <font color='{{c:wtr}}'>•</font> <font face='Consolas' size='10' color='{{c:t-winrate}}'>{{t-battles>30?{{t-winrate%2d|--}}%}}</font>",
+      "vehicleFormatRight": "<font face='Consolas' size='10' color='{{c:t-winrate}}'>{{t-battles>30?{{t-winrate%2d|--}}%}}</font> <font color='{{c:wtr}}'>•</font> <font alpha='{{alive?#FF|#80}}'>{{vehicle}}</font>",
       "extraFieldsLeft": [
         ${"def.vicon"}
       ],
